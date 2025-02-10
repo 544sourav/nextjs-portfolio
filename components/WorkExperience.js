@@ -7,7 +7,7 @@ import "swiper/css";
 
 const WorkExperience = ({ experience }) => {
   return (
-    <div className="bg-secondaryBlack text-white p-6 rounded-[20px] border h-full border-[#202020] shadow-lg ">
+    <div className="bg-secondaryBlack text-white p-6 rounded-[20px] border border-[#202020] shadow-lg ">
       <div className="flex flex-col items-center">
         <span className=" text-sm flex  gap-x-2 ">
           <MdOutlineWork size={18} className="text-purple-400" /> Worked As

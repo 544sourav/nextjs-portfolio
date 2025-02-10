@@ -13,7 +13,7 @@ const ProjectCard = ({ projects }) => {
     }
 
   return (
-    <div className="bg-secondaryBlack  text-white p-8 rounded-[20px] border border-[#202020] shadow-lg  mx-auto">
+    <div className="bg-secondaryBlack  text-white p-8 rounded-[20px] border border-[#202020] shadow-lg ">
       <div className="flex flex-col items-center">
         <span className="text-sm flex gap-x-2">
           <MdWindow size={20} className="text-purple-400 " /> Projects

@@ -5,7 +5,7 @@ import { FaGem } from "react-icons/fa";
 
 const Contact = ({ email }) => {
   return (
-    <div className=" mx-auto p-6 h-full bg-secondaryBlack text-white rounded-[20px] border border-[#202020] shadow-lg">
+    <div className=" mx-auto p-2 sm:p-6 h-full bg-secondaryBlack text-white rounded-[20px] border border-[#202020] shadow-lg">
       <div className="flex flex-col items-center">
         <div className="w-16 h-16 bg-lightGray rounded-full flex items-center justify-center">
           <span className="text-purple-400 mt-1">

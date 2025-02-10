@@ -34,7 +34,7 @@ const CodingProfile = ({ platformProfiles }) => {
   );
 
 return (
-  <div className="mx-auto p-6 text-white bg-secondaryBlack shadow-lg rounded-[20px] border border-[#202020]">
+  <div className="mx-auto p-2 sm:p-6 text-white bg-secondaryBlack shadow-lg rounded-[20px] border border-[#202020]">
     <div className="flex flex-col items-center">
       <span className=" text-sm flex gap-x-2">
         <SiCodersrank size={20} className="text-purple-400" /> DSA
@@ -84,7 +84,7 @@ return (
               {maxRating && (
                 <div className="mr-2">
                   <p>
-                    <span className="font-medium">Max Rating:{" "}</span>
+                    <span className="font-medium">Max Rating: </span>
                     {maxRating}
                   </p>
                 </div>

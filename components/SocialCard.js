@@ -45,7 +45,7 @@ const OnlinePresence = ({ social }) => {
   );
 
   return (
-    <div className=" mx-auto p-6 bg-secondaryBlack h-full text-white rounded-[20px] border border-[#202020] shadow-lg">
+    <div className=" mx-auto p-2 sm:p-6 bg-secondaryBlack h-full text-white rounded-[20px] border border-[#202020] shadow-lg">
       <div className="flex flex-col items-center">
         <span className=" text-sm flex gap-x-2">
           <MdRocketLaunch size={20} className="text-purple-400" /> Follow Me

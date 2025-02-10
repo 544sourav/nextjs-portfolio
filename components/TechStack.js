@@ -38,8 +38,8 @@ const TechStack = ({ skills }) => {
     //     ))}
     //   </div>
     // </div>
-    <div className="bg-secondaryBlack text-white p-6 rounded-[20px] border border-[#202020] shadow-lg  overflow-hidden w-full mx-auto">
-      <div className="flex flex-col items-center my-2">
+    <div className="bg-secondaryBlack text-white p-2 sm:p-6 rounded-[20px] border border-[#202020] shadow-lg  overflow-hidden w-full mx-auto">
+      <div className="flex flex-col items-center ">
         <span className="text-sm flex gap-x-2">
           <RiStackFill size={20} className="text-purple-400" /> My Stacks
         </span>
@@ -48,9 +48,8 @@ const TechStack = ({ skills }) => {
 
       {/* Scrolling Container */}
       <div className="relative w-full overflow-hidden mt-4 space-y-3 my-1">
-        
         <motion.div
-          className="flex gap-4 min-w-[600%]" 
+          className="flex gap-4 min-w-[600%]"
           animate={{ x: ["0%", "-100%"] }}
           transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
         >
@@ -71,10 +70,9 @@ const TechStack = ({ skills }) => {
           ))}
         </motion.div>
 
-      
         <motion.div
-          className="flex gap-4 min-w-[600%]" 
-          animate={{ x: ["-100%", "0%"] }} 
+          className="flex gap-4 min-w-[600%]"
+          animate={{ x: ["-100%", "0%"] }}
           transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
         >
           {infiniteSkills.map((skill, index) => (

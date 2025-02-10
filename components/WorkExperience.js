@@ -7,12 +7,12 @@ import "swiper/css";
 
 const WorkExperience = ({ experience }) => {
   return (
-    <div className="bg-secondaryBlack text-white p-6 rounded-[20px] border border-[#202020] shadow-lg ">
+    <div className="bg-secondaryBlack text-white p-2 sm:p-6 rounded-[20px] border border-[#202020] shadow-lg ">
       <div className="flex flex-col items-center">
         <span className=" text-sm flex  gap-x-2 ">
           <MdOutlineWork size={18} className="text-purple-400" /> Worked As
         </span>
-        <h2 className="text-xl font-semibold mt-1">Work Experience</h2>
+        <h2 className="text-xl font-semibold ">Work Experience</h2>
       </div>
 
       {experience.length > 0 ? (
@@ -22,7 +22,7 @@ const WorkExperience = ({ experience }) => {
           slidesPerView={1}
           loop={true}
           autoplay={{ delay: 6000, disableOnInteraction: false }}
-          className="mt-4"
+          className="mt-2"
         >
           {experience.map((exp) => (
             <SwiperSlide key={exp._id}>

@@ -22,7 +22,7 @@ const Page = () => {
         </span>
         <h2 className="text-xl font-semibold mt-1">Work Gallery</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-6 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-2 sm:p-6 gap-6">
         <div className="flex justify-center items-center mt-6">
           <button
             onClick={() => router.replace("/")}

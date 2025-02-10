@@ -8,7 +8,6 @@ import { FaGraduationCap } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosDownload } from "react-icons/io";
 const ProfileCard = ({profile}) => {
-   
   return (
     <div className="bg-secondaryBlack text-white p-2 sm:p-6 rounded-[20px] border border-[#202020] w-full mx-auto">
       {/* Upper Part */}

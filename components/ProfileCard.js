@@ -7,6 +7,7 @@ import { IoMail } from "react-icons/io5";
 import { FaGraduationCap } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosDownload } from "react-icons/io";
+import { FaLinkedin } from 'react-icons/fa';
 const ProfileCard = ({profile}) => {
   return (
     <div className="bg-secondaryBlack text-white p-2 sm:p-6 rounded-[20px] border border-[#202020] w-full mx-auto">
@@ -47,7 +48,9 @@ const ProfileCard = ({profile}) => {
           </div>
 
           {/* Name & Title */}
-          <h1 className="text-xl font-semibold mt-1 text-left">{profile.name}</h1>
+          <h1 className="text-xl font-semibold mt-1 text-left">
+            {profile.name}
+          </h1>
           <p className="text-gray-400 text-sm">
             I&apos;m a <span className="text-primaryVoilet">Web Developer</span>
           </p>
@@ -73,11 +76,11 @@ const ProfileCard = ({profile}) => {
       {/* Bottom Section */}
       <div className="mt-6 flex sm:flex-row flex-col gap-3">
         <Link
-          href={`https://instagram.com/${profile.social.instagram}`}
+          href={`https://www.linkedin.com/in/${profile.social.linkedin}`}
           className="flex  justify-center items-center gap-2 w-full bg-lightGray p-3 rounded-xl text-sm text-gray-300 hover:bg-terinaryGray"
         >
-          <RiInstagramFill size={20} className="text-primaryVoilet" />
-          DM me (Instagram)
+          <FaLinkedin size={20} className="text-primaryVoilet" />
+          DM me (LinkedIn)
         </Link>
         <Link
           href={`https://wa.me/${profile.phone}`}

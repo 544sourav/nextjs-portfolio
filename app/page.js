@@ -13,8 +13,8 @@ async function getMyData() {
       {
         method: "GET",
         headers: { "Content-Type": "application/json" },
-        cache: "no-store",
-      } 
+        next: { revalidate: 60 },
+      }
     );
 
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);

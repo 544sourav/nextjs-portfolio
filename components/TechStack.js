@@ -50,8 +50,8 @@ const TechStack = ({ skills }) => {
       <div className="relative w-full overflow-hidden mt-4 space-y-3 my-1">
         <motion.div
           className="flex gap-4 min-w-[600%]"
-          animate={{ x: ["0%", "-100%"] }}
-          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+          animate={{ x: ["0%", "-150%"] }}
+          transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
         >
           {infiniteSkills.map((skill, index) => (
             <div
@@ -72,8 +72,8 @@ const TechStack = ({ skills }) => {
 
         <motion.div
           className="flex gap-4 min-w-[600%]"
-          animate={{ x: ["-100%", "0%"] }}
-          transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+          animate={{ x: ["-150%", "0%"] }}
+          transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
         >
           {infiniteSkills.map((skill, index) => (
             <div

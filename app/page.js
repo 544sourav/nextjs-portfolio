@@ -18,7 +18,7 @@ async function getMyData() {
     );
 
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-
+    // console.log(response)
     const res = await response.json();
     return res.success ? res.profiles : null;
   } catch (error) {
@@ -51,7 +51,7 @@ async function getCodolioData() {
 export default async function Home() {
   const profile = await getMyData();
   const codolio = await getCodolioData();
-
+  console.log(profile);
   if (!profile) {
     return (
       <div className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-primaryBlack text-white text-2xl">
